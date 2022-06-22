@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -140,8 +140,9 @@ namespace AspNetCoreVerifiableCredentials
                 }
 
                 //here you could change the payload manifest and change the firstname and lastname
-                payload["issuance"]["claims"]["given_name"] = "Megan";
-                payload["issuance"]["claims"]["family_name"] = "Bowen";
+                payload["issuance"]["claims"]["given_name"] = "Graye";
+                payload["issuance"]["claims"]["family_name"] = "Holder";
+                payload["issuance"]["claims"]["Organization"] = "AFLCMC/HNID";
 
                 jsonString = JsonConvert.SerializeObject(payload);
 
